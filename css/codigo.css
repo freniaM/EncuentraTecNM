@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;                 
+    height: 1500px;
+    outline: 2px solid;
+    display: grid;   
+    grid-template-rows: repeat(22, 1fr);
+    padding: 0 !important;
+}
+
+
+/*------------------NAVBAR----------------------------*/
+.navbar{
+    background-color: brown;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "e1 e1 e1 e1 e1 e2 e2 e2 e2 e2"
+    ;
+}
+
+.navbar-1{
+    grid-area: e1;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    
+}
+.navbar-1-item{
+    /*imagen del zorro*/
+    /* flex-grow: 1;  crece en un factor de uno con el espacio sobrante del flexbox */
+    /* display: block; */
+    margin-top: 5px;
+    margin-right: 5px;
+    max-width: 40px; 
+    max-height: 40px;
+    background-color: #000; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.navbar-2-item{
+    /* flex-grow: 1; */
+    color: orange;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 40px;
+    border: solid;
+    padding-top: 5px;
+    border-color: orange;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.navbar-3-item{
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 40px; 
+    max-height: 40px;
+    background-color: #000; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+
+
+}
+.navbar-4{
+    grid-area: e2;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    
+}
+.navbar-4-item{
+    margin-top: 5px;
+    max-width: 40px; 
+    max-height: 40px;
+    background-color: #000; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+
+}
+
+/*----------------------------------------------------------------------*/
+
+.item2{
+    background-color: burlywood;
+    grid-row: 2/18;
+}
+.item3{
+    background-color: blueviolet;
+    grid-row: 18/-1;
+}
