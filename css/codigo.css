@@ -38,9 +38,7 @@ body{
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    display: none;
-    
+    justify-content: flex-start; 
 }
 .navbar-1-item{
     /*imagen del zorro*/
@@ -51,8 +49,7 @@ body{
     max-width: 40px; 
     max-height: 40px;
     background-color: #000; /* Fondo negro */
-    border-radius: 10px; /* Bordes redondeados */
-    
+    border-radius: 10px; /* Bordes redondeados */   
 }
 
 .navbar-2-item{
@@ -78,25 +75,24 @@ body{
     max-height: 40px;
     background-color: #000; /* Fondo negro */
     border-radius: 10px; /* Bordes redondeados */
-
-
 }
+
 .navbar-4{
     grid-area: e2;
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
     justify-content: end;
-    display: none;
-    
 }
+
 .navbar-4-item{
     margin-top: 5px;
-    max-width: 40px; 
-    max-height: 40px;
-    background-color: #000; /* Fondo negro */
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/search.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del botón */
     border-radius: 10px; /* Bordes redondeados */
-
+    
 }
 
 .navbar-5{
@@ -105,7 +101,8 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    /* display: none; */
+    /* visibility: hidden; */
+    display: none;
 }
 .navbar-5-item {
     color: orange;
@@ -123,7 +120,8 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: end;
-    /* display: none; */
+    /* visibility: hidden; */
+    display: none;
 }
 /*----------------------------------------------------------------------*/
 
