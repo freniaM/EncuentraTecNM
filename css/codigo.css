@@ -124,11 +124,49 @@ body{
     display: none;
 }
 /*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 
-.item2{
+/*--------------------------LUGARES  (2do item)--------------------------------------------*/
+
+.lugares{
     background-color: burlywood;
     grid-row: 2/18;
+    display: flex;
 }
+
+.l1{
+    display: grid;
+    grid-template-areas: 
+    "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+    "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+    "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+    "a2 a2 a2 a2 a2 a3 a3 a3 a3 a3"
+    "a2 a2 a2 a2 a2 a3 a3 a3 a3 a3"
+    "a2 a2 a2 a2 a2 a4 a4 a4 a4 a4"
+    "a2 a2 a2 a2 a2 a4 a4 a4 a4 a4";
+    width: 290px;
+    height: 250px;
+    padding: 5px;
+    margin: 5px;
+    border: solid;
+    
+}
+.l1-item-1{
+    grid-area: a1;
+
+}
+.l1-item-2{
+    grid-area: a2;
+}
+.l1-item-3{
+    grid-area: a3;
+}
+.l1-item-4{
+    grid-area: a4;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 .item3{
     background-color: blueviolet;
     grid-row: 18/-1;
