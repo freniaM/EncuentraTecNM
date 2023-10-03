@@ -30,6 +30,7 @@ body{
     grid-template-areas: 
     "e1 e1 e1 e1 e1 e2 e2 e2 e2 e2"
     ;
+    background-image: url(/img/wea.gif);
 }
 
 .navbar-1{
@@ -37,19 +38,18 @@ body{
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    
+    justify-content: flex-start; 
 }
 .navbar-1-item{
     /*imagen del zorro*/
     /* flex-grow: 1;  crece en un factor de uno con el espacio sobrante del flexbox */
-    /* display: block; */
+    /* display: none;  */
     margin-top: 5px;
     margin-right: 5px;
     max-width: 40px; 
     max-height: 40px;
     background-color: #000; /* Fondo negro */
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */   
 }
 
 .navbar-2-item{
@@ -75,26 +75,54 @@ body{
     max-height: 40px;
     background-color: #000; /* Fondo negro */
     border-radius: 10px; /* Bordes redondeados */
-
-
 }
+
 .navbar-4{
     grid-area: e2;
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
     justify-content: end;
-    
 }
+
 .navbar-4-item{
     margin-top: 5px;
-    max-width: 40px; 
-    max-height: 40px;
-    background-color: #000; /* Fondo negro */
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/search.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del botón */
     border-radius: 10px; /* Bordes redondeados */
-
+    
 }
 
+.navbar-5{
+    grid-area: e1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+    display: none;
+}
+.navbar-5-item {
+    color: orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    
+}
+.navbar-6{
+    grid-area: e2;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+    /* visibility: hidden; */
+    display: none;
+}
 /*----------------------------------------------------------------------*/
 
 .item2{
