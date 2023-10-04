@@ -65,7 +65,6 @@ body{
     padding-top: 5px;
     border-color: orange;
     border-radius: 10px;
-    text-shadow: 1px 1px 2px #ffffff;
 }
 
 .navbar-3-item{
@@ -129,9 +128,13 @@ body{
 /*--------------------------LUGARES  (2do item)--------------------------------------------*/
 
 .lugares{
-    background-color: burlywood;
+    background-image: url(/img/fondo.jpg);
+    background-size: contain;
+    background-color: #000;
     grid-row: 2/18;
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .l1{
@@ -149,20 +152,51 @@ body{
     padding: 5px;
     margin: 5px;
     border: solid;
+    border-radius: 10px;
+    background-color: orange;
     
 }
 .l1-item-1{
     grid-area: a1;
+    display: flex;
+    max-width: 275px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.titulos{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 275px;
+    text-decoration: underline;
+    font-size: 20px;
 
 }
+
 .l1-item-2{
     grid-area: a2;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: stretch;
+}
+.img{
+    width: 160px;
+    flex-grow: 1;
+    border: solid;
+    border-radius: 10px;
 }
 .l1-item-3{
     grid-area: a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .l1-item-4{
     grid-area: a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*------------------------------------------------------------------------------------------*/
