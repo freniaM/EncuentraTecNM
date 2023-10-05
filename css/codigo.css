@@ -10,10 +10,10 @@ body{
 
 .container{
     width: 100%;                 
-    height: 1500px;
+    height: auto;
     outline: 2px solid;
     display: grid;   
-    grid-template-rows: repeat(22, 1fr);
+    grid-template-rows: repeat(26, 1fr);
     padding: 0 !important;
 }
 
@@ -131,10 +131,10 @@ body{
     background-image: url(/img/fondo.jpg);
     background-size: contain;
     background-color: #000;
-    grid-row: 2/18;
+    grid-row: 2/26;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: flex-start;
 }
 
 .l1{
@@ -160,12 +160,14 @@ body{
     grid-area: a1;
     display: flex;
     max-width: 275px;
+    height: 65px;
     justify-content: center;
-    align-items: stretch;
     flex-wrap: nowrap;
+    word-wrap: break-word;                          /*esto es para que no se desborden los tenxtos largos y se ajusten al contenedor*/
 }
 
 .titulos{
+    
     font-family: 'Courier New', Courier, monospace;
     max-width: 275px;
     text-decoration: underline;
@@ -190,7 +192,7 @@ body{
     grid-area: a3;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 .l1-item-4{
     grid-area: a4;
@@ -201,7 +203,10 @@ body{
 
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
+
+/*--------------------------REDES  (3er item)--------------------------------------------*/
+
 .item3{
     background-color: blueviolet;
-    grid-row: 18/-1;
+    grid-row: 26/-1;
 }
