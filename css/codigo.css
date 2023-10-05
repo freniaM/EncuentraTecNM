@@ -20,7 +20,7 @@ body{
 
 /*------------------NAVBAR----------------------------*/
 .navbar{
-    background-color: brown;
+    background-color: darkmagenta;
     grid-row: 1/2;
     width: 100%;
     height: 100%;
@@ -30,7 +30,6 @@ body{
     grid-template-areas: 
     "e1 e1 e1 e1 e1 e2 e2 e2 e2 e2"
     ;
-    background-image: url(/img/wea.gif);
 }
 
 .navbar-1{
@@ -54,7 +53,7 @@ body{
 
 .navbar-2-item{
     /* flex-grow: 1; */
-    color: orange;
+    color: darkorange;
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -128,9 +127,7 @@ body{
 /*--------------------------LUGARES  (2do item)--------------------------------------------*/
 
 .lugares{
-    background-image: url(/img/fondo.jpg);
-    background-size: contain;
-    background-color: #000;
+    background-color: darkgrey;
     grid-row: 2/26;
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +150,7 @@ body{
     margin: 5px;
     border: solid;
     border-radius: 10px;
-    background-color: orange;
+    background-color: darkorange;
     
 }
 .l1-item-1{
@@ -206,7 +203,17 @@ body{
 
 /*--------------------------REDES  (3er item)--------------------------------------------*/
 
-.item3{
-    background-color: blueviolet;
+.redes{
+    background-color: #000;
     grid-row: 26/-1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.redes-item{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
 }
