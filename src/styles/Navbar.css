@@ -1,0 +1,54 @@
+/* frontend/src/styles/Navbar.css */
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black !important;
+  padding: 10px;
+  height: 45px;
+  border-bottom: 1px solid black;
+}
+
+#nav{
+  color: #ffffff;
+}
+
+.searchInput {
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.searchInput:focus {
+  outline-offset: 5px;
+  background-color: #fff;
+}
+
+.navbar-container:hover {
+  #nav{
+    color: #FEBF00 !important;
+  }
+}
+/* Add more styles as needed */
+
+@media screen and (max-width: 400px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.574);
+    padding: 10px;
+    color: white;
+    height: 45px;
+    border-bottom: 1px solid black;
+    
+  }
+  #nav{
+    font-size: 18px;
+  }
+}

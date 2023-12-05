@@ -1,0 +1,6 @@
+
+Primero debes de ejecutar la API 
+ruta/de/donde/esta/tu/carpeta/API node server.js
+
+Para ejecutar el front:
+ruta/de/donde/esta/tu/carpeta npm start
